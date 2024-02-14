@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="container__cabecalho">
+                <h1 class="cabecalho__texto">Decodificador</h1>
+            </div>
+        </header>
+        <main class="container__main">
+
+            <section class="main__inserir__texto">
+                <label class="label">Digite sua mensagem:</label>
+                <textarea class="input__mensagem" id="texto"></textarea>
+            </section>
+
+            <section class="main__botoes">
+                <button class="botao__criptografar" onclick="criptografar()">Criptografar</button>
+                <button class="botao_descriptografar" onclick="descriptografar()">Descriptografar</button>
+            </section>
+
+            <section class="main__resposta">
+                <label class="label">Resultado:</label>
+                <textarea class="main__resultado" id="resultado"></textarea>
+            </section>
+
+            <div class="copiar">
+                <button class="botao__copiar" id="botaoCopiar" onclick="copiar()">Copiar</button>
+            </div>
+
+        </main>
+    
+        <footer>
+            <div class="rodape">
+                <p class="rodape__texto">Apenas caracteres sem acento</p>
+                <p class="rodape__texto">Feito por Luis Henrique</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>     
